@@ -1,3 +1,120 @@
-h1, p {
-  font-family: Lato;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  min-height: 100vh;
+  color: #252422;
+  background: #e9dcdc;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-header {
+  padding: 1rem;
+  min-width: 65vw;
+  margin: 0px auto;
+  text-align: center;
+  background-color: #fbfafa;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+}
+
+.app-header .title {
+  font-weight: 300;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.app-header .input-wrapper {
+  display: flex;
+}
+
+.app-header .input-wrapper input {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 120px;
+  padding: 0.8em;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+input,
+button {
+  font-size: 1em;
+  appearance: none;
+  color: currentcolor;
+  background: transparent;
+  border: 1px solid #828691;
+}
+
+.add-button {
+  border-left: none;
+}
+
+.delete-btn {
+  width: 90px;
+  padding: 0.3em;
+  margin-left: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 2px 2px rgb(204 197 185 / 50%);
+  border-radius: 6px;
+  background-color: #fbfafa;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 2em;
+  margin: 0px;
+}
+
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: solid 5px #b9b5b5;
+  background-color: #f5e7e7;
+  padding: 0.23em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02rem;
+  word-break: break-word;
+  transition: all 0.3s ease-out;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+li {
+}
+
+li:last-child {
+  margin-bottom: 0px;
 }
